@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Test Sleep Section -->
+    <section>
+      <!-- Container -->
+      <div class="container">
+        <div class="type-heading">
+          <img src="assets/img/sleep-test-blue.png" alt="" />
+          <h3>¿Cuántas horas por día deberías dormir?</h3>
+        </div>
+        <!-- Type Box -->
+        <div class="type-box type-box-content">
+          <div id="query" class="test-sleep-box-content">
+            <p class="first-p">
+              La cantidad de sueño que necesitás depende de varios factores,
+              especialmente de tu edad. Ingresá tus datos para conocer cuántas
+              horas hay que dormir para tener una vida saludable.
+            </p>
+            <div class="sleep-test-calc">
+              <div class="common-calc-item sleep-test-calc-itm">
+                <label>Edad</label>
+                <select id="age_option" class="calc-select sleep-select" place-holder="">
+                  <!-- <option value="0" data-display="Ejemplo: 40 años">
+                    Ejemplo: 40 años
+                  </option> -->
+                  <option value="1">Recién nacidos (0-3 meses)</option>
+                  <option value="2">Bebés (4-11 meses)</option>
+                  <option value="3">Niños en edad preescolar (3-5)</option>
+                  <option value="4">Niños pequeños (1-2)</option>
+                  <option value="5">Niños en edad escolar (6-13)</option>
+                  <option value="6">Adolescentes (14-17)</option>
+                  <option value="7">Adultos más jóvenes (18 a 25)</option>
+                  <option value="8">Adultos (26-64)</option>
+                  <option value="9">Adultos mayores, más de 64 años</option>
+                </select>
+              </div>
+              <div class="common-calc-item sleep-test-calc-itm">
+                <label>¿Cuántas horas dormís por día?</label>
+                <select id="hour_option" class="calc-select sleep-select">
+                  <!-- <option value="0" data-display="Ejemplo: Menos de 6 horas">
+                    Ejemplo: Menos de 6 horas
+                  </option> -->
+                  <option value="1">1 horas</option>
+                  <option value="2">2 horas</option>
+                  <option value="3">3 horas</option>
+                  <option value="4">4 horas</option>
+                  <option value="5">5 horas</option>
+                  <option value="6">6 horas</option>
+                  <option value="7">7 horas</option>
+                  <option value="8">8 horas</option>
+                  <option value="9">9 horas</option>
+                  <option value="10">10 horas</option>
+                  <option value="11">11 horas</option>
+                  <option value="12">12 horas</option>
+                  <option value="13">13 horas</option>
+                  <option value="14">14 horas</option>
+                  <option value="15">15 horas</option>
+                  <option value="16">16 horas</option>
+                  <option value="17">+17 horas</option>
+                </select>
+              </div>
+            </div>
+            <button id="calculator" class="btn calc-btn">Calcular</button>
+          </div>
+          <div id="answer" class="test-sleep-box-content text-center display-none">
+            <div>
+              <span class="h4 font-SSB d-block my-3">Según tus datos:</span>
+              <div>
+                <p class="d-inline">Edad:</p>
+                <p id="age" class="d-inline"></p>
+              </div>
+              <div>
+                <p class="d-inline">Sueño:</p>
+                <p id="hour" class="d-inline"></p>
+              </div>
+              <p class="h3-md my-4" id="sleepstatus"></p>  
+              <p class="h4 font-SM">
+                Tu descanso recomendado es de<br class="custom-break"> <span class="font-SSB">entre <span id="firstTime">7</span> y <span id="secondTime">9</span> horas por día</span>
+              </p>
+              <button id="recalculator" class="btn calc-btn">
+                Calcular nuevamente
+              </button>
+            </div>
+            <div>
+              <p class="h4 font-SSB mt-5 mb-3 text-left">
+                ¿Por qué es importante dormir bien?
+              </p>
+              <p class="p-sm text-left">
+                Descansar bien es clave para disfrutar de una vida sana. Sin embargo, en
+                la Argentina hay un déficit de sueño colectivo elevado porque sus
+                habitantes se caracterizan por tener hábitos nocturnos, lo que impacta
+                en la calidad de su descanso. Este test le permitirá saber si duerme el
+                tiempo que necesita, o si tiene que mejorar sus hábitos para lograr un
+                mayor bienestar.
+              </p>
+              <hr/>
+              <div class="px-md-4">
+                <p class="small mt-4 text-left" style="padding-right:10px;">
+                  * La información es de referencia, se aconseja consultar a un médico.
+                  Todas las decisiones que se tomen en base a este relevamiento son
+                  responsabilidad de cada persona.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+      </div>
+      <!-- End Container -->
+    </section>
+    <!-- End Test Sleep -->
+
+    <!-- All Script -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
