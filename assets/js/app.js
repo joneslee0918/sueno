@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $("select").niceSelect();
   $("#hour_option").next("div").find(".current").text("Ejemplo: Menos de 6 horas");
+  $("#hour_option").next("div").find(".current").css("color","#ccc");
   $("#age_option").next("div").find(".current").text("Ejemplo: 40 años");
+  $("#age_option").next("div").find(".current").css("color","#ccc");
   $("#age_option").next("div").find("ul").css("height","200px");
   $("#age_option").next("div").find("ul").css("overflow-y","scroll");
   $("#hour_option").next("div").find("ul").css("height","200px");
@@ -130,15 +132,15 @@ var firstTime_option = [14,12,11,8,9,10,7,7,7];
 var secondTime_option = [17,15,14,13,11,11,9,9,9];
 
 $("#age_option").change(function() {
+  $("#age_option").next("div").find(".current").css("color","#4c84b7");
   var selectedValue = $(this).val(); 
   age_option_value = selectedValue;
-
 });
 
 $("#hour_option").change(function() {
+  $("#hour_option").next("div").find(".current").css("color","#4c84b7");
   var selectedValue = $(this).val(); 
   hour_option_value = selectedValue;
-
 });
 
 $("#calculator").click(function() {
@@ -163,7 +165,9 @@ $("#recalculator").click(function() {
   $("#query").css("display","block");
   $("#answer").css("display","none");
   $("#age_option").next('div').find('.current').text("Ejemplo: 40 años");
+  $("#age_option").next("div").find(".current").css("color","#ccc");
   $("#hour_option").next('div').find('.current').text("Ejemplo: Menos de 6 horas");
+  $("#hour_option").next("div").find(".current").css("color","#ccc");
   age_option_value = 0;
   hour_option_value = 0;
 });

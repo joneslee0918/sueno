@@ -483,7 +483,7 @@ a.btn {
   padding-left: 15px;
   font-size: 18px;
   line-height: 22px;
-  color: var(--light-grey);
+  /* color: var(--light-grey); */
   width: 100%;
 }
 .calc-select.nice-select:active,
